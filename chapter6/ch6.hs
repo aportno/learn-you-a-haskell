@@ -28,3 +28,16 @@ chain n
     | odd n = n:chain (n*3 + 1)
 
 -- 6.4 lambdas
+
+numLongChains :: Int
+numLongChains = length (filter (\xs -> length xs > 15) (map chain [1..100]))
+
+-- 6.5 only folds and horses
+
+sum' :: (Num a) => [a] -> a
+sum' xs = foldl (\acc x -> acc + x) 0 xs                -- \acc is a binary function, 0 is the starting value and xs is the list to be folded up
+
+-- 6.6 function application with $
+
+-- 6.7 function composition
+
