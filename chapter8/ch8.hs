@@ -1,4 +1,4 @@
--- making our own types and typeclasses
+P-- making our own types and typeclasses
 
 module Shapes
 ( Point(..)
